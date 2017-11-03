@@ -1,11 +1,16 @@
 import React from 'react';
+import Application from './Application';
 import './LandingPage.css';
 
-const LandingPage = () => (
+const LandingPage = ({ showApplication, onApplyClick }) => (
   <div className="LandingPage">
-    <button className="applyButton">
+    <button
+      className="applyButton"
+      onClick={onApplyClick}
+    >
         Apply Now!
     </button>
+    { showApplication && <Application /> }
   </div>
 );
 
