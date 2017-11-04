@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { showApplication } from '../actions';
+import { showApplication, submitApplication } from '../actions';
 import LandingPage from '../components/LandingPage';
 
 const mapStateToProps = state => {
@@ -11,7 +11,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onApplyClick: () => {dispatch(showApplication())}
+    onApplyClick: () => {dispatch(showApplication())},
+    onApplicationSubmit: data => {dispatch(submitApplication(data))}
   };
 };
 

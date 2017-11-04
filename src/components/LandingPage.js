@@ -2,15 +2,17 @@ import React from 'react';
 import Application from './Application';
 import './LandingPage.css';
 
-const LandingPage = ({ showApplication, onApplyClick }) => (
+const LandingPage = ({ showApplication, onApplyClick, onApplicationSubmit }) => (
   <div className="LandingPage">
-    <button
-      className="applyButton"
-      onClick={onApplyClick}
-    >
-        Apply Now!
-    </button>
-    { showApplication && <Application /> }
+    { !showApplication &&
+      <button
+        className="applyButton"
+        onClick={onApplyClick}
+      >
+          Apply Now!
+      </button>
+    }
+    { showApplication && <Application onApplicationSubmit={onApplicationSubmit}/> }
   </div>
 );
 
