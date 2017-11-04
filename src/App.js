@@ -5,13 +5,13 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import LandingPageContainer from './containers/LandingPageContainer';
-import BgCheckRequest from './components/BgCheckRequest';
+import BgCheckRequestContainer from './containers/BgCheckRequestContainer';
 
 const App = () => (
   <Router>
     <div>
       <Route exact path="/" component={LandingPageContainer} />
-      <Route path="/background-check" component={BgCheckRequest} />
+      <Route path="/background-check" component={BgCheckRequestContainer} />
     </div>
   </Router>
 );
