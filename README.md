@@ -20,6 +20,9 @@ npm install -g serve
 serve -s build
 ```
 
+### Discussion
+I attempted to create this app using only React, Redux, and surrounding libraries, to keep this app lightweight and fast. However this caused me to spend the majority of my time writing boilerplate code instead of solving the actual problem statement. If I had spent more time on the submission, I would have loved to implement the rest of the requested features (logging user to console, storing sessions and loading previous application state from stored session) as well as implementing a ui that is actually somewhat visually pleasing.
+
 ## Part 2
 
 ### Run the script
